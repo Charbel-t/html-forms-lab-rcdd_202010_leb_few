@@ -12,21 +12,11 @@
 
     <!-- First, create a form tag where our inputs will be nested -->
 <form>
-  <label>fullname</label><input type="text" placeholder="Enter Name">
-  <Label>Mail</Label><input type="email" placeholder="Enter Email">
-  <label>Tel</label><input type="tel" placeholder="Enter Telephone (optional)">
-  <label>Message</label><textarea placeholder="Enter Message"></textarea>
-  <checkbox>
-    <option>Hi</option>
-    <option>Bye</option>
-  </checkbox>
-  <input type="submit" value="submit">
-  
-</form>
 
       <!-- Add a label for 'fullname'-->
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
+      <label>fullname</label><input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
       <!-- Include the place holder text "Enter Name" and make this input required -->
 
 
@@ -34,26 +24,30 @@
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+<Label>email</Label><input type="email" id="email" name="email" placeholder="Enter Email" required>
 
       <!-- Add a label for 'phone'-->
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+<label>phone</label><input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)">
 
       <!-- Add a label for 'message'-->
 
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
-
+<label>message</label><textarea id="message" name="message" placeholder="Enter Message"></textarea>
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
+<checkbox id="checkbox">
+    <option>Hi</option>
+    <option>Bye</option>
+  </checkbox>
+  
 
 
       <!-- Add an input with the type set to 'submit' -->
-
-    
+<input type="submit" value="submit">
+  </form>  
   </body>
 </html>
